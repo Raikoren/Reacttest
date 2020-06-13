@@ -3,7 +3,7 @@ import './MainApp.css';
 
 function MainApp() {
   return (
-    <div className="App col-sm-10">
+    <div className="App">
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
