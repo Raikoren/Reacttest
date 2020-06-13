@@ -1,27 +1,10 @@
-.sidenav {
-	height: 100%;
-	width: 200px;
-	z-index: 1;
-	background-color: #252525;
-	top: 0;
-	left: 0;
+.sidebar-sticky {
+	position: -webkit-sticky;
+	background-color: #333343;
+	position: sticky;
+	top: 53px;
+	height: calc(100vh - 53px);
+	padding-top: .5rem;
 	overflow-x: hidden;
-	padding-top: 20px;
-}
-
-.sidenav button {
-	margin-top: 10px;
-	width: 100%;
-	text-decoration: none;
-	color: #d3caca;
-	display: block;
-}
-
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
-.main {
-	margin-left: 160px;
-	padding: 0px 10px;
-}
+	overflow-y: auto;
+  }

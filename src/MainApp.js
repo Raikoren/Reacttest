@@ -5,9 +5,8 @@ import ThirdStep from './ThirdStep';
 import './MainApp.css';
 
 function MainApp() {
-	const step = 0;
-	const [First, Last] = useState(0);
-	const genre = useState(0);
+
+	const step = 2;
 	
 	if (step == 0) {
 		return (<FirstStep />);

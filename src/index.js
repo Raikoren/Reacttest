@@ -8,15 +8,17 @@ import MainApp from './MainApp';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
+	<React.StrictMode>
 		<TopNav />
-		<div id="page-content">
-			<LeftNav />
-			<MainApp />
+		<div className="container-fluid">
+			<div className="row">
+				<LeftNav />
+				<MainApp />
+			</div>
 		</div>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+	</React.StrictMode>,
+	document.getElementById('root')
+	);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
