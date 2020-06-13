@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TopNav from './TopNav';
+import LeftNav from './LeftNav';
+import MainApp from './MainApp';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+		<TopNav />
+		<div className="row">
+			<LeftNav />
+			<MainApp />
+		</div>
   </React.StrictMode>,
   document.getElementById('root')
 );
