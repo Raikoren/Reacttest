@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
 		<TopNav />
-		<div className="row page-content">
+		<div id="page-content">
 			<LeftNav />
 			<MainApp />
 		</div>

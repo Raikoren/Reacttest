@@ -1,24 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MainApp.css';
 
 function MainApp() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+	const [First, Last] = useState(0);
+	const step = 0;
+	const genre = useState(0);
+	
+	if (step == 0)
+		return (
+		<div className="App container">
+			<div className="main-app form-group">
+				<div class="input-group input-group-lg mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-lg">First Name</span>
+					</div>
+				<input
+				type="text"
+				class="form-control"
+				aria-label="Large"
+				aria-describedby="inputGroup-sizing-sm"
+				required/>
+				</div>
+				<div class="input-group input-group-lg mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-lg">Last Name</span>
+					</div>
+				<input
+				type="text"
+				class="form-control"
+				aria-label="Large"
+				aria-describedby="inputGroup-sizing-sm"
+				required/>
+				</div>
+				<button type="button" class="btn btn-primary">
+				Voici l'identité du suspect</button>
+			</div>
+		</div>
+		);
+}	
 
 export default MainApp;
