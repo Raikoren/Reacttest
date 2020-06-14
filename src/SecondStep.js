@@ -1,37 +1,25 @@
 import React, { useState } from 'react';
 import './MainApp.css';
 
-function SecondStep() {
+function SecondStep(props) {
 	
 	return (
-	<div className="App container">
-		<div className="main-app form-group">
-			<div class="input-group input-group-lg mb-3">
-				<div class="input-group-prepend">
-					<span class="input-group-text" id="inputGroup-sizing-lg">First Name</span>
+		<div className="col-9 col-lg-10 pt-3 px-4 text-center">
+			<div className="row">
+				<div className="input-group mb-3 col justify-content-center mt-5">
+					<button 
+					type="button" 
+					className="btn btn-primary">
+					Homme</button>
 				</div>
-			<input
-			type="text"
-			class="form-control"
-			aria-label="Large"
-			aria-describedby="inputGroup-sizing-sm"
-			required/>
-			</div>
-			<div class="input-group input-group-lg mb-3">
-				<div class="input-group-prepend">
-					<span class="input-group-text" id="inputGroup-sizing-lg">Last Name</span>
+				<div className="input-group mb-3 col justify-content-center mt-5">
+					<button 
+					type="button" 
+					className="btn btn-primary">
+					Femme</button>
 				</div>
-			<input
-			type="text"
-			class="form-control"
-			aria-label="Large"
-			aria-describedby="inputGroup-sizing-sm"
-			required/>
 			</div>
-			<button type="button" class="btn btn-primary">
-			Voici l'identité du suspect</button>
 		</div>
-	</div>
 	);
 }
 

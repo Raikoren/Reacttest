@@ -7,6 +7,7 @@ import LeftNav from './LeftNav';
 import MainApp from './MainApp';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
 	<React.StrictMode>
 		<TopNav />

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './MainApp.css';
 
-
-
 function ThirdStep(props) {
 	return (
 			<h1>

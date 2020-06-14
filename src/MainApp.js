@@ -4,9 +4,15 @@ import SecondStep from './SecondStep';
 import ThirdStep from './ThirdStep';
 import './MainApp.css';
 
-function MainApp() {
+const identity = {
+	first: "yannis",
+	last: "labidi",
+	genre: "monsieur"
+}
 
-	const step = 2;
+function MainApp(props) {
+
+	const step = 0;
 	
 	if (step == 0) {
 		return (<FirstStep />);
@@ -15,7 +21,7 @@ function MainApp() {
 		return (<SecondStep />);
 	}
 	if (step == 2) {
-		return (<ThirdStep first="Yannis" last="LABIDI" genre="Monsieur"/>);
+		return (<ThirdStep first={identity.first} last={identity.last} genre={identity.genre}/>);
 	}
 }	
 
