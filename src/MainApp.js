@@ -15,7 +15,7 @@ function MainApp() {
 		return (<SecondStep />);
 	}
 	if (step == 2) {
-		return (<ThirdStep />);
+		return (<ThirdStep first="Yannis" last="LABIDI" genre="Monsieur"/>);
 	}
 }	
 
